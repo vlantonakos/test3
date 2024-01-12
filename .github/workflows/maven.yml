@@ -32,6 +32,6 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Build Image
       run: |
-        echo ${{secrets.TOKEN}} | docker login -u Antonis --password-stdin
-        docker build -t Antonis/test3 .
-        docker push Antonis/test3
+        echo ${{secrets.TOKEN}} | docker login -u vlanto --password-stdin
+        docker build -t vlanto/test3 .
+        docker push vlanto/test3
